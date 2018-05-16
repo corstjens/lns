@@ -5,6 +5,8 @@ Written by Benoît Depaire, Lotte Verdonck and Jeroen Corstjens.
 ## Getting Started
 This repository contains a large neighbourhood search implementation, based on Adaptive Large Neighbourhood Search by [Pisinger and Röpke (2007)](https://www.sciencedirect.com/science/article/pii/S0305054805003023).
 
+The adapative elements are implemented, but commented out.
+
 ### Usage Examples
 Commandline arguments are passed to the Python script using sys.argv.
 

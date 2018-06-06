@@ -21,3 +21,8 @@ python ./lns/scripts/try_out.py 1 ./lns/data/Example_Instance.txt 1 720007 10 0.
 
 ### Requirements
 Python 2.7.13
+
+## Data sets
+The folder ProblemInstanceSet1 contains the sample of problem instances used for the analysis performed in the paper 'A Multilevel Evaluation Method for Heuristics with an Application to the VRPTW' by Corstjens, Depaire, Caris, & Sörensen (2018).
+
+The Python script VRPTW_instance_generator.py was used to generate the problem instance sample and is able to generate additional samples.

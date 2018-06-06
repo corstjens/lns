@@ -48,8 +48,7 @@ for instance_id in range(1,number_of_instances + 1):
     f.write("%s\nruntime: %f" % (filename, runtime))
     f.write("\n\tVEHICLE\n\tNUMBER\t\tCAPACITY\n")
     f.write("\t%d\t\t\t%d\n\n" % (vehicle_number, vehicle_capacity))
-    f.write("CUSTOMERS\nCUST ID\t XCOORD\t YCOORD\t DEMAND\t 
-             START TIME WINDOW\t END TIME WINDOW\t SERVICE TIME\n\n")
+    f.write("CUSTOMERS\nCUST ID\t XCOORD\t YCOORD\t DEMAND\t START TIME WINDOW\t END TIME WINDOW\t SERVICE TIME\n\n")
     f.write("%d\t%d\t%d\t%d\t\t%d\t\t\t%d\t\t\t%d\n" % (depot_id, depot_x_coord, depot_y_coord, depot_demand, 
             depot_start_tw, depot_end_tw, depot_service_time))
     
@@ -100,6 +99,5 @@ for instance_id in range(1,number_of_instances + 1):
     average_service_time = total_service_time/float(customers)
     average_tw_width = total_tw_width/float(customers)
     average_demand = total_demand/float(customers)
-    f.write("average service time: %f - average time window width: %f 
-            - average demand: %f\n" % (average_service_time, average_tw_width, average_demand))
+    f.write("average service time: %f - average time window width: %f - average demand: %f\n" % (average_service_time, average_tw_width, average_demand))
     f.close()

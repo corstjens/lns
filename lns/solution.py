@@ -655,10 +655,10 @@ class Solution(object):
                 self.routes[route_id].insert_node(position, delivery_node_id)
                 if (self.routes[route_id].isValid()):
                     new_cost = self.routes[route_id].cost
-                delta_f = new_cost - current_cost
-                if delta_f < lowest_delta_f:
-                    lowest_delta_f = delta_f
-                    best_insert_position = position
+                    delta_f = new_cost - current_cost
+                    if delta_f < lowest_delta_f:
+                        lowest_delta_f = delta_f
+                        best_insert_position = position
                 self.routes[route_id].delete_node(delivery_node_id)
         # self._delta_f[request_id, route_id] = lowest_delta_f
         self._delta_f[request_id][route_id] = lowest_delta_f
